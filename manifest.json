@@ -1,0 +1,29 @@
+{
+    "name":"youtube-addiction-healper",
+    "version":"0.1.0",
+    "manifest_version": 2,
+    "icons":{
+        "128":"./user-interface.png"
+    },
+    "background": {
+        "scripts": ["./background.js"]
+      },
+      "options_page":"./options.html",
+      "browser_action":{
+          "default_popup":"popup.html"
+      },
+      "permissions":[
+          "https://www.youtube.com/",
+          "http://*/*", "https://*/*",
+          "storage" 
+      ],
+      "browser_action": {
+       
+        "default_icon": "./user-interface.png"  ,
+        "default_popup": "popup.html" 
+
+        
+      } 
+
+
+}
