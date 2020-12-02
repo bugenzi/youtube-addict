@@ -1,8 +1,8 @@
 
 chrome.storage.sync.get(["key"], function (result) {
   let youtubeState = result.key;
- 
-  if(youtubeState==="hide"){
+  console.log(result.key);
+ if(youtubeState==="hide"){
     if (document.querySelector(".style-scope ytd-rich-grid-renderer")) {
       document.querySelector(".style-scope ytd-rich-grid-renderer").style.display =
         "none";
